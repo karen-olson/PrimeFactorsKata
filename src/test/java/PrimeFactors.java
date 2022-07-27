@@ -4,17 +4,11 @@ import java.util.List;
 public class PrimeFactors {
     public List<Integer> factor(Integer n) {
         List<Integer> primes = new ArrayList<Integer>();
-        int divisor = 2;
 
-        while (n > 1) {
-            while (n % divisor == 0) {
+        for (int divisor = 2; n > 1; divisor++) {
+            for (; n % divisor == 0; n /= divisor) {
                 primes.add(divisor);
-                n /= divisor;
             }
-            divisor++;
-        }
-        if (n > 1) {
-            primes.add(n);
         }
         return primes;
     }
