@@ -16,5 +16,9 @@ public class PrimeFactorsTest {
     @Test void twoHasAPrimeFactorOfTwo() {
         assertEquals(List.of(2), new PrimeFactors().factor(2));
     }
+
+    @Test void threeHasAPrimeFactorOfThree() {
+        assertEquals(List.of(3), new PrimeFactors().factor(3));
+    }
 }
 
