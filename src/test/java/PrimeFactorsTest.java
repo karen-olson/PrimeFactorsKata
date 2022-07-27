@@ -32,5 +32,9 @@ public class PrimeFactorsTest {
     @Test void eightHasPrimeFactorsOfTwoTwoAndTwo() {
         assertEquals(List.of(2, 2, 2), new PrimeFactors().factor(8));
     }
+
+    @Test void nineHasPrimeFactorsOfThreeAndThree() {
+        assertEquals(List.of(3, 3), new PrimeFactors().factor(9));
+    }
 }
 
